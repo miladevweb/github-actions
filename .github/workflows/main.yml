@@ -20,7 +20,9 @@ jobs:
           - run: echo "💡 The ${{ github.repository }} repository has been cloned to the runner."
 
           - name: Install Dependencies
-            run: npm ci
+            run: npm install -g pnpm
+
+          - run: pnpm install
 
           - name: Start up server
-            run: npm start
+            run: pnpm start
