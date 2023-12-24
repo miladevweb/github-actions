@@ -19,10 +19,10 @@ jobs:
               node-version: 20
           - run: echo "💡 The ${{ github.repository }} repository has been cloned to the runner."
 
-          - name: Install Dependencies
+          - name: Install PNPM
             run: npm install -g pnpm
 
           - run: pnpm install
 
           - name: Start up server
-            run: pnpm start
+            run: ls
