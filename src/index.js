@@ -10,7 +10,9 @@ app.use(express.urlencoded({ extended: true }))
 app.use(
   router.get('/', (_req, res) =>
     res.json({
-      message: `Hello Render.com from PORT: ${process.env.PORT}`,
+      message: `Hello Render.com from PORT: ${process.env.PORT}
+      RE-DEPLOY
+`,
     }),
   ),
 )
